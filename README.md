@@ -45,20 +45,7 @@ It is a website about global warming and climate changing. (Küresel ısınma ve
 
 ---
 
-## 🤖 4. Discord Bot – İklim Dedektifi
-**İçerik:**
-- Bot hakkında küçük tanıtım kutusu
-- Örnek komutlar:  
-  - `/karbonipucu`  
-  - `/bugünküenerjitasarrufu`
-  - o	“Bugün karbon ayak izin ne durumda?”
-  - o	“Enerji tasarrufu için ipucu ister misin?”
-
-- Buton: “Katılmak İçin Tıkla – Discord Linki”
-
----
-
-## 📚 5. Bilgi Kütüphanesi & Tavsiye Alanı
+## 📚 4. Bilgi Kütüphanesi & Tavsiye Alanı
 **İçerik:**
 - 3-4 kısa bilgi kutusu  
 - Görseller, ikonlarla zenginleştirilmiş bilgi başlıkları:  
