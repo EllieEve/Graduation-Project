@@ -3,7 +3,7 @@ It is a website about global warming and climate changing. (Küresel ısınma ve
 
 
 
-# 🌎 İklim Farkındalığı Web Sitesi – Nihai Yapı (Genişletilmiş 6+ Bölüm)
+# 🌎 İklim Farkındalığı Web Sitesi – Nihai Yapı (Genişletilmiş 5+ Bölüm)
 
 ---
 
