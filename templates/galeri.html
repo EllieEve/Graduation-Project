@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeri</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='galeri.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>İklim Değişikliği</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}#tanitim">Tanıtım</a></li>
+                <li><a href="{{ url_for('oyun') }}">Karbon Oyunu</a></li>
+                <li><a href="{{ url_for('recycle') }}">Geri Dönüşüm</a></li>
+                <li><a href="{{ url_for('infobox') }}">Bilgi Kutusu</a></li>
+                <li><a href="{{ url_for('galeri') }}">Galeri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="poster-section">
+            <h2>Nesli Tükenen Hayvanları Koruyalım!</h2>
+            <img src="static\image\endangered-poster.png" alt="Nesli Tükenen Hayvanlar Posteri" class="poster">
+        </section>
+
+        <section class="gallery-section">
+            <h2>İklim Galerisi</h2>
+            <div class="gallery-grid">
+                <img src="static\image\nature1.jpg" alt="Doğa Görseli 1">
+                <img src="static\image\nature2.webp" alt="Doğa Görseli 2">
+                <img src="static\image\nature3.jpg" alt="Doğa Görseli 3">
+                <img src="static\image\nature4.webp" alt="Doğa Görseli 4">
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

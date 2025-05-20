@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İklim Değişikliği Projesi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+    <!-- 🌿 İklim Değişikliği -->
+    <header>
+        <h1>İklim Değişikliği</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}#tanitim">Tanıtım</a></li>
+                <li><a href="{{ url_for('oyun') }}">Karbon Oyunu</a></li>
+                <li><a href="{{ url_for('recycle') }}">Geri Dönüşüm</a></li>
+                <li><a href="{{ url_for('infobox') }}">Bilgi Kutusu</a></li>
+                <li><a href="{{ url_for('galeri') }}">Galeri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🧊 1. BÖLÜM: Nedir? -->
+    <section id="tanitim">
+        <h2>İklim Değişikliği Nedir?</h2>
+        <p>
+            İklim değişikliği, dünya genelindeki sıcaklıkların artmasına ve hava olaylarının değişmesine neden olan küresel bir sorundur. 
+            Karbondioksit ve metan gibi sera gazları atmosferde birikir, bu da kuraklık, buzulların erimesi ve canlı türlerinin tehlikeye girmesi gibi etkiler yaratır.
+        </p>
+
+        <!-- BM görseli -->
+        <img src="{{ url_for('static', filename='image/earth-asking-for-help.jpg') }}" alt="BM İklim Görseli" width="400">
+
+        <!-- BM link butonu -->
+        <div class="butonlar">
+            <a href="https://www-un-org.translate.goog/en/climatechange/science/causes-effects-climate-change?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=en-US&_x_tr_pto=wapp" target="_blank" class="bilgi-buton">UN: Nedenler ve Etkiler</a>
+            <a href="https://www-un-org.translate.goog/en/un75/climate-crisis-race-we-can-win?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=en&_x_tr_pto=wapp" target="_blank" class="bilgi-buton">UN: Kazanabileceğimiz Yarış</a>
+        </div>
+    </section>
+
+</body>
+</html>

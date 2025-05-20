@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geri Dönüşüm</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='recycle.css') }}">
+</head>
+<body>
+
+    <!-- Üst Menü -->
+    <header>
+        <h1 class="header-title">İklim Değişikliği</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}#tanitim">Tanıtım</a></li>
+                <li><a href="{{ url_for('oyun') }}">Karbon Oyunu</a></li>
+                <li><a href="{{ url_for('recycle') }}">Geri Dönüşüm</a></li>
+                <li><a href="{{ url_for('infobox') }}">Bilgi Kutusu</a></li>
+                <li><a href="{{ url_for('galeri') }}">Galeri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- İçerik Alanı -->
+    <main class="container">
+        <h2 class="game-title">Geri Dönüşüm Sınıflandırıcısı</h2>
+
+        
+
+        <div class="button-container">
+            <a href="https://drive.google.com/file/d/1W_xbzmCGTXpTpfJeNlyc_KCBFSkrrM22/view?usp=sharing" class="download-button">Projeyi İndir</a>
+        </div>
+
+
+        <!-- Açıklama metni -->
+        <div class="aciklama">
+            <h3>Teachable Machine ile Kullanım Rehberi</h3>
+            <ol>
+                <li>İlk olarak yukarıdaki bağlantıya tıklayarak sınıflandırma projesini indirin.</li>
+                <li><a href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine</a> sitesine girin.</li>
+                <li>“Image Project” (Görsel Projesi) → “Standard Image Model” seçeneğini tıklayın.</li>
+                <li>Sayfanın sağ üst köşesinden “Upload Project” (Proje Yükle) butonuna tıklayın.</li>
+                <li>İndirdiğiniz `.tm` dosyasını seçerek projeyi yükleyin.</li>
+                <li>Yükledikten sonra modeli düzenleyebilir, test edebilir ve eğitebilirsiniz.</li>
+                <li>Son olarak, modeli “Export Model” ile dışa aktarabilir ve kendi projenize entegre edebilirsiniz.</li>
+            </ol>
+        </div>
+    </main>
+
+</body>
+</html>

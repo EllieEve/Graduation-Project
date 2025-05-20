@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Karbon Kaçışı</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='infobox.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>İklim Değişikliği</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}#tanitim">Tanıtım</a></li>
+                <li><a href="{{ url_for('oyun') }}">Karbon Oyunu</a></li>
+                <li><a href="{{ url_for('recycle') }}">Geri Dönüşüm</a></li>
+                <li><a href="{{ url_for('infobox') }}">Bilgi Kutusu</a></li>
+                <li><a href="{{ url_for('galeri') }}">Galeri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="infobox-container">
+    <h2>Geri Dönüşümde Yapılan Hatalar</h2>
+    <div class="info-card">
+        <img src="static\image\hatalar.jpg" alt="Hatalar">
+        <p>Kirli plastikleri geri dönüşüm kutusuna atmak süreci zorlaştırır.</p>
+    </div>
+
+    <h2>Su Tasarrufu Nasıl Yapılır?</h2>
+    <div class="info-card">
+        <img src="static\image\disfircalamak.png" alt="Su Tasarrufu">
+        <p>Diş fırçalarken musluğu kapatarak yılda yüzlerce litre su tasarrufu sağlayabilirsin.</p>
+    </div>
+
+    <h3>Bugün Ne Yapabilirim?</h3>
+    <div class="suggestion-box">
+        <button onclick="showSuggestion()">Tavsiye Al</button>
+        <p id="suggestion-text">Bugünün tavsiyesi burada görünecek.</p>
+    </div>
+
+    <h3>Gerçek mi Efsane mi?</h3>
+    <div class="quiz-box">
+        <p><strong>Soru:</strong> Kağıt 7 kez mi geri dönüştürülebilir?</p>
+        <p><strong>Cevap:</strong> Evet, yaklaşık 5-7 kez geri dönüştürülebilir.</p>
+    </div>
+</div>
+
+<script>
+    function showSuggestion() {
+        const suggestions = [
+            "Bugün duş süreni 1 dakika kısalt.",
+            "Evden çıkarken tüm ışıkları kapat.",
+            "Yanına bez çanta al.",
+            "Kullanmadığın eşyaları bağışla.",
+            "Bir pet şişeyi geri dönüşüme at.",
+            "Bugün bir arkadaşına geri dönüşüm anlat.",
+            "Elektronik atıkları ayırmaya başla.",
+            "Yürüyerek gitmeyi tercih et.",
+            "Kullanmadığın uygulamaları sil (dijital temizlik).",
+            "Kahveni termosla al."
+        ];
+        const random = Math.floor(Math.random() * suggestions.length);
+        document.getElementById("suggestion-text").innerText = suggestions[random];
+    }
+</script>
+
+</body>
+</html>

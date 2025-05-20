@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f0f9ff;
+    color: #2f4f4f;
+}
+
+
+main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Poster */
+.poster-section h2 {
+    text-align: center;
+    color: #2f4f4f;
+    margin-bottom: 20px;
+}
+
+.poster {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Galeri */
+.gallery-section h2 {
+    text-align: center;
+    color: #2f4f4f;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Alt boşluk */
+body::after {
+    content: "";
+    display: block;
+    height: 60px;
+}
+
+/* ÜST MENÜ – HEADER */
+header {
+    background-color: #317b71;
+    color: white;
+    padding: 30px 0 20px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* NAV MENÜ */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #c3f3e3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}

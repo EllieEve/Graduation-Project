@@ -1,0 +1,125 @@
+/* Genel Sayfa Ayarları */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0fdf4;
+    color: #2f4f4f;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Bilgi Kutusu İçeriği */
+.infobox-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Kartlar */
+.info-card {
+    background-color: #ffffff;
+    border-left: 6px solid #34d399;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.info-card img {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+/* Tavsiye Kutusu */
+.suggestion-box {
+    background-color: #e0f7ec;
+    border: 2px dashed #10b981;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.suggestion-box button {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggestion-box button:hover {
+    background-color: #059669;
+}
+
+#suggestion-text {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #065f46;
+}
+
+/* Quiz Kutusu */
+.quiz-box {
+    background-color: #fefce8;
+    border-left: 6px solid #facc15;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+}
+
+/* Ekstra Boşluk Alt Kısımda */
+body::after {
+    content: "";
+    display: block;
+    height: 80px;
+}
+
+
+/* ÜST MENÜ – HEADER */
+header {
+    background-color: #317b71;
+    color: white;
+    padding: 30px 0 20px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* NAV MENÜ */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #c3f3e3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
